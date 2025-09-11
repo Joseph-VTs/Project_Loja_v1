@@ -1,9 +1,9 @@
 # Project_Loja_v1 #
----
 Loja Online v1 => Teste
-Anotar todos os dias
+---
 
-´ Ínicio 11/09/2025 ás 14h e 38min ´
+- Anotar todos os dias
+- Ínicio 11/09/2025 ás 14h e 38min
 
 ***
 # Tarefas #
