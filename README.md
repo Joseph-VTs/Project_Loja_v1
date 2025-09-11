@@ -1,17 +1,19 @@
-# Project_Loja_v1
-Loja Online v1 => Teste
-Ínicio 11/09/2025 ás 14h e 38min
-Anotar todos os dias
+# Project_Loja_v1 #
 ---
+Loja Online v1 => Teste
+Anotar todos os dias
 
-# Tarefas
+´ Ínicio 11/09/2025 ás 14h e 38min ´
+
+***
+# Tarefas #
 - [] Criar Estrutura Básica
 - [] Criar Página Inicial
 - [] Criar Banco de Dados
 - [] Criar Carrinho de Compras
 
 ***
-## Linguagens
+## Linguagens ##
 - Round 1
     - HTML 5
     - CSS 3
@@ -23,8 +25,7 @@ Anotar todos os dias
     - Python
     - Java
     - Node/js
-    -  
 
 ***
-## Links
+## Links ##
 [Acessar Linkedin](https://www.linkedin.com/in/joseph-vt-98460a35a/)
