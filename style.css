@@ -93,8 +93,6 @@
         font-size: var(--Font-10);
     }
 }
-
-.Linha .Produto{}
 .Linha .Produto .Div-img-Produto{
     
     width: 220px;
