@@ -1,0 +1,140 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.Container{
+    margin: 5px;
+    padding: 10px;
+    background-color: #20F9;
+    
+    display: grid; /*Padrão Coluna*/
+    /*FR ou PX ou %*/
+    grid-template-columns: repeat(3, minmax(150px, 250px)) 0.5fr;
+    grid-template-rows: repeat(2, 150px) repeat(2, 250px) 80px;
+    
+    /*Espaçamento entre os Elementos*/
+    gap: 20px 40px;
+    
+    /*Alinhar itens dentro da Célula Horizontal "Item Centro Coluna"*/
+    justify-items: stretch;
+    /*Alinhar itens dentro da Célula Vertical "Item Centro Linha"*/
+    align-items: stretch;
+    /*Funionamento Padrão "Itens Centro da Página" Horizontal*/
+    justify-content: stretch;
+    /*Alinhamento no Vertical | Precisa definir o Height*/
+    align-content: stretch;
+    height: 200vh;
+    /*Mitura do Justify and Align*/
+    place-items: stretch;
+}
+
+.Container .Item{
+    background-color: #02F7;
+    border: 1px solid gold;
+    padding: 5px;
+    color: rgb(161, 134, 134);
+}
+
+
+
+/*Grid-Template-Areas ->*/
+.Container2{
+    margin: 5px;
+    padding: 10px;
+    background-color: #20F9;
+
+    display: grid;
+    grid-template-areas: 
+        "Header Header"
+        "Aside Article"
+        "Main Main"
+        "Footer Footer"
+    ;
+    gap: 8px;
+
+    /* grid-template-rows: repeat(4, 200px); -> Diferença que não sei quantas linhas teremos!*/
+    grid-auto-rows: 220px 80px 700px;
+}
+
+.Container2 header, .Container2 aside, .Container2 article, .Container2 main, .Container2 footer{
+    padding: 5px;
+    border: 2px solid black;
+}
+
+.Container2 header{
+    grid-area: Header;
+
+    background-color: gray;
+}
+.Container2 aside{
+    grid-area: Aside;
+
+    background-color: yellow;
+}
+.Container2 article{
+    grid-area: Article;
+
+    background-color: green;
+}
+.Container2 main{
+    grid-area: Main;
+
+    background-color: yellowgreen;
+    display: grid;
+    gap: 10px;
+    grid-auto-rows: 80px;
+
+    section{
+        border: 2px solid red;
+        padding: 5px;
+    }
+}
+.Container2 footer{
+    grid-area: Footer;
+
+    background-color: gray;
+}
+
+
+
+/*3x Tentativa*/
+.Container3{
+    margin: 5px;
+    padding: 10px;
+    background-color: #20F9;
+    display: grid;
+}
+
+.Container3 header, .Container3 aside, .Container3 article, .Container3 main, .Container3 footer{
+    padding: 5px;
+    border: 2px solid black;
+    margin: 8px;
+}
+
+.Container3 header{
+    background-color: gray;
+    justify-self: center;
+    grid-column: 2;
+}
+.Container3 aside{
+    background-color: gold;
+    grid-column: 1;
+    grid-row: 1;
+}
+.Container3 article{
+    background-color: green;
+    grid-column: 3;
+}
+.Container3 main{
+    background-color: yellowgreen;
+    grid-column: span 3;
+    height: 500px;
+    width: 100%;
+}
+.Container3 footer{
+    background-color: gray;
+    grid-column: span 3;
+
+}
