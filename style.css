@@ -20,6 +20,26 @@
     --Font-18: 18px;
 }
 
+header{
+    padding: 10px;
+    border: 1px solid #808080;
+    
+    nav ul{
+        display: flex;
+        justify-content: space-around;
+        text-align: center;
+    }
+}
+
+header nav ul li, a{
+    text-decoration: none;
+    list-style: none;
+    color: #FF7C39;
+    font-size: var(--Font-16);
+    font-weight: 700;
+    border-bottom: 1px solid #808080;
+}
+
 .Container{
     width: 100%;
     height: 100vh;
