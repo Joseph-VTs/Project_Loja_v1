@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário | Simples</title>
+    <link rel="stylesheet" href="Formulario.css">
+</head>
+<body>
+    <div class="Div-Form">
+        <form action="" method="post" id="My-Form">
+            <div>
+                <label for="First-Name">Nome: </label>
+                <input type="text" name="First-Name" id="Name" required>
+            </div>
+            <div>
+                <label for="Last-Name">Sobrenome: </label>
+                <input type="text" name="Last-Name" id="Surname" required>
+            </div>
+            <div>
+                <label for="Email">E-mail: </label>
+                <input type="email" name="Email" id="My-Email" required>
+            </div>
+            <div>
+                <label for="Birth">Nascimento: </label>
+                <input type="date" name="Birth" id="Birth-Date" required>
+            </div>
+            <div>
+                <button type="submit" id="Submit-btn">Enviar Dados</button>
+            </div>
+        </form>
+    </div>
+    <div class="Div-Cadastro">
+        <table id="Table-Cad">
+            <caption><h3>Pessoas Cadastradas</h3></caption>
+            <thead>
+                <tr>
+                    <th>Nome</th>
+                    <th>Sobrenome</th>
+                    <th>E-mail</th>
+                    <th>Nascimento</th>
+                </tr>
+            </thead>
+
+            <tbody id="Table-TBody">
+                <tr>
+                    <td>Exemplo</td>
+                    <td>de Exemplo</td>
+                    <td>Exemplo@gmail.com</td>
+                    <td>01/01/1001</td>
+                </tr>
+            </tbody>
+
+            <tfoot>
+                <tr>
+                    <td colspan="2">Total de Registros = <span>01</span></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+            </tfoot>
+        </table>
+    </div>
+
+    <script src="Formulario.js"></script>
+</body>
+</html>
