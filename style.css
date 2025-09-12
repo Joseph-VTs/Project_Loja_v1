@@ -1,7 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Ubuntu:wght@400;500;700&display=swap');
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+:root{
+    --Cor-Branca: #FFF;
+    --Cor-Laranja: #FF7C39;
+    
+    /* Tamanho de Fontes */
+    --Font-08: 8px;
+    --Font-10: 10px;
+    --Font-12: 12px;
+    --Font-14: 14px;
+    --Font-16: 16px;
+    --Font-18: 18px;
 }
 
 .Container{
@@ -10,18 +26,28 @@
     background-color: #06f9;
 }
 .Linha{
+    overflow: hidden;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     background-color: #06f4;
     width: 100%;
-    height: 500px;
+    height: 460px;
+    padding: 10px;
 }
 .Linha .Produto{
-    background-color: #FFF;
+    margin: 0 5px;
+    background-color: var(--Cor-Branca);
     width: 20%;
     height: 100%;
+    padding: 5px;
+    overflow: hidden;
+    border-radius: 5px;
 }
 
 .Linha .Produto .Div-Card-Topo{
     display: flex;
+    text-align: center;
     justify-content: space-between;
 }
 .Linha .Produto .Div-Card-Topo > div:nth-child(1){
@@ -31,20 +57,48 @@
     p{
         text-align: center;
         padding: 5px;
-        font-size: 10px;
-        color: #FFF;
+        font-size: 9px;
+        color: var(--Cor-Branca);
+        letter-spacing: 2px;
+        font-weight: 500;
     }
 }
 .Linha .Produto .Div-Card-Topo > div:nth-child(2){
     display: flex;
     gap: 5px;
+    
+    > div:nth-child(1){
+        font-size: var(--Font-12);
+
+        display: flex;
+        justify-content: center;
+        text-align: center;
+
+        button{
+            padding: 2px;
+            background-color: transparent;
+            border: none;
+            cursor: pointer;
+
+            i{
+                color: var(--Cor-Laranja);
+            }
+        }
+
+        .Star-Ok{
+            color: var(--Cor-Laranja); 
+        }
+    }
+    > div:nth-child(2){
+        font-size: var(--Font-10);
+    }
 }
 
 .Linha .Produto{}
 .Linha .Produto .Div-img-Produto{
     
-    width: 250px;
-    height: 250px;
+    width: 220px;
+    height: 220px;
     
     img{
         width: 100%;
@@ -52,8 +106,76 @@
     }
 }
 
-.Linha .Produto .Div-Button{
+.Linha .Produto .Info-Produto{
+    padding: 5px;
+    font-size: 15px;
+    font-weight: 400;
+}
 
+.Linha .Produto .Div-Price{
+    
+    > div:nth-child(1){
+        display: flex;
+        text-align: center;
+        justify-content: space-between;
+        padding: 5px;
+        
+        > div:nth-child(2){
+            font-size: var(--Font-10);
+            font-weight: 600;
+            letter-spacing: 0.4px;
+            color: #808080;
+        }
+    }
+
+    > div:nth-child(2){
+
+        b{
+            font-size: var(--Font-16);
+            color: var(--Cor-Laranja);
+
+            span:nth-of-type(1) {
+                font-size: var(--Font-16);
+            }
+            span:nth-of-type(2) {
+                background-color: var(--Cor-Laranja);
+                font-size: var(--Font-10);
+                color: var(--Cor-Branca);
+                padding: 2px 4px;
+                border-radius: 20px;
+            }
+        }
+
+    }
+    
+    > div div s{
+        color: rgba(154, 154, 174, 0.705);
+        font-size: var(--Font-10);     
+    }
+
+    > div:nth-child(3){
+        color: rgba(154, 154, 174, 0.705);
+        font-size: var(--Font-12);
+        font-weight: 600;
+    }
+
+    > div:nth-child(4){
+        font-size: var(--Font-12);
+        font-weight: 600;
+        color: rgba(154, 154, 174, 0.705);
+        
+        b{
+            font-weight: 900;
+            color: rgba(55, 55, 70, 0.697);        
+            
+            span{
+                color: rgba(55, 55, 70, 0.697);            
+            }
+        }
+    }
+}
+
+.Linha .Produto .Div-Button{
     padding: 10px;
     width: 100%;
     height: 60px;
@@ -61,6 +183,8 @@
     button{
         width: 100%;
         height: 100%;
+        border-radius: 5px;
+        border: 2px solid var(--Cor-Laranja);
 
         display: flex;
         justify-content: space-between;
@@ -69,17 +193,40 @@
     }
 }
 .Linha .Produto .Div-Button button > div:nth-child(1){
-    background-color: orange;
+    background-color: var(--Cor-Laranja);
     padding: 5px 0;
     height: 100%;
-    width: 56px;
+    width: 20%;
+
+    display: flex;
+    justify-content: center;
+    text-align: center;
 
     img{
-        color: #FFF;
+        color: var(--Cor-Branca);
         width: 28px;
         height: 28px;
     }
+
+    i{
+        color: var(--Cor-Branca);
+        font-size: 28px;
+    }
 }
 .Linha .Produto .Div-Button button > div:nth-child(2){
-    background-color: red;
+    background-color: var(--Cor-Branca);
+    width: 80%;
+    padding: 5px;
+
+    > div:nth-child(1){
+        font-size: var(--Font-10);
+        color: var(--Cor-Laranja);
+        font-weight: 500;
+    }
+
+    > div:nth-child(2){
+        font-size: var(--Font-14);
+        color: var(--Cor-Laranja);
+        font-weight: 900;
+    }
 }
