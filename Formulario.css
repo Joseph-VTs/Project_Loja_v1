@@ -1,0 +1,62 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.Div-Form{
+    margin: 50px 100px;
+    padding: 10px;
+    border: 2px solid gray;
+}
+
+.Div-Form #My-Form{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    
+    div{
+        background-color: aqua;
+        padding: 5px;
+    }
+}
+
+.Div-Cadastro{
+    margin: 10px;
+    border: 2px solid gray;
+}
+
+.Div-Cadastro table{
+    border-collapse: collapse;
+    width: 100%;
+
+    th, td {
+        border: 1px solid #333;
+        padding: 6px;
+        text-align: left;
+    }
+
+    tbody{
+        color: gray;
+        font-weight: 500;
+    }
+
+    thead{
+        color: blue;
+        font-weight: 900;
+        letter-spacing: 2px;
+        background-color: #f2f2f2;
+    }
+    
+    tfoot {
+        letter-spacing: 2px;
+        background-color: #f2f2f2;
+        color: cadetblue;
+        font-weight: 700;
+
+        span{
+            color: red;
+        }
+    }
+}
