@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layouts | Formulários</title>
+
+    <style>
+        *{
+            box-sizing: border-box;
+            margin: 0;
+        }
+
+        div{
+            padding: 12px;
+            background-color: lightcyan;
+        }
+        
+        header{
+            padding: 8px;
+        }
+        
+        header nav{
+            background-color: transparent;
+        }
+        
+        header nav ul{
+            background-color: aquamarine;
+        }
+
+        header nav ul li{
+            padding: 8px;
+
+            a h3{
+                color: blue;
+                border-bottom: 2px solid black;
+            }
+        }
+
+        header nav ul li ul{
+            background-color: transparent;
+        }
+
+        
+        header nav ul li ul li{
+            border-left: 6px solid green;
+            text-decoration: none;
+            font-size: 18px;
+            border-radius: 6px;
+            background-color: lightyellow;
+            padding: 8px;
+            margin: 10px;
+            transition: font-size 0.3s ease;
+        }
+        
+        header nav ul li a{
+            text-decoration: none;
+            color: black;        
+            transition: opacity 0.2s ease;
+        }
+        header nav ul li ul li:hover{
+            background-color: aqua;
+            font-size: 16.5px;
+            color: red;
+        }
+        header nav ul li ul a:hover{
+            opacity: 0.7;
+        }
+
+    </style>
+</head>
+<body>
+    <div>
+        <a href="../index.html">◀ Home</a>
+        <header>
+            <nav>
+                <ul>
+                    <li><h3>Formulários</h3>
+                        <ul>
+                            <li><a href="Layouts/Fomulários/Formulario.html">Formulário v1.0</a></li>
+                        </ul>
+                    </li>
+                    <li><h3>Layout Produtos</h3>
+                        <ul>
+                            <li><a href="Layouts/Estilos Página/Display_Grid.html">Display Grid</a></li>
+                            <li><a href="Layouts/Estilos Página/Display_Layout1.html">Display Layout v1.0</a></li>
+                            <li><a href="Layouts/Estilos Página/Produtos_v1.0.html">Produtos v1.0</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+    </div>
+</body>
+</html>
